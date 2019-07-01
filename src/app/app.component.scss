@@ -1,0 +1,343 @@
+.body {
+  min-width: 1000px;
+}
+.first-view {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.first-view-circle {
+  background-image: url(../assets/pictures/dots.jpg);
+  background-size: cover;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  display: flex;
+  position: absolute;
+}
+.first-view-text {
+  color: white;
+  font-size: 80px;
+  width: 100%;
+  text-align: center;
+  z-index: 1;
+}
+
+/*Navigation section*/
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  background-color: #3a3a3a;
+  width: 100%;
+  padding: 15px 5px;
+  top: -5px;
+  z-index: 100;
+  border-bottom: 2px solid black;
+}
+.nav-text {
+  display: flex;
+}
+.nav-left {
+  color: white;
+  background-color: blue;
+  border-radius: 25px;
+  height: 48px;
+  width: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-right {
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Facebook {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Facebook:hover {
+  background-color: #4267b2;
+}
+.Instagram {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Instagram:hover {
+  background-image: linear-gradient(to bottom left, #7937a9, #e90916, #f0c900);
+}
+.LinkedIn {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.LinkedIn:hover {
+  background-color: #0077b5;
+}
+.Reddit {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Reddit:hover {
+  background-color: #ff4500;
+}
+.Twitter {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Twitter:hover {
+  background-color: #1da1f2;
+}
+.Github {
+  font-size: 30px;
+  color: white;
+  height: 48px;
+  width: 48px;
+  background-color: lightgrey;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 10px;
+}
+.Github:hover {
+  background-color: black;
+}
+fa-icon {
+  margin-top: 3px;
+}
+
+/* Header section*/
+.header {
+  display: flex;
+  justify-content: center;
+  background-color: #3a3a3a;
+  height: 80vh;
+  color: white;
+}
+.info {
+  border: 5px solid black;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto 50px;
+  width: 37.5%;
+  height: 450px;
+}
+.info h2 {
+  margin-bottom: 0px;
+  border-bottom: 3px solid red;
+}
+.info p {
+  font-size: 20px;
+  padding: 0px 10px;
+  text-align: justify;
+}
+.picture {
+  background-image: url(../assets/pictures/fountain.JPG);
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  width: 400px;
+  height: 450px;
+  margin: auto 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Spacer section */
+.spacer {
+  height: 100vh;
+  opacity: 1;
+}
+.spacer-pic {
+  background-image: url(../assets/pictures/mountain.JPG);
+  background-size: cover;
+  z-index: -1;
+  position: fixed;
+  top: 0;
+  height: 100%;
+  width: 100%;
+}
+
+/*Section of Three Things*/
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #3a3a3a;
+  color: white;
+  height: 90vh;
+}
+#aboutMe {
+  font-size: 40px;
+  font-family: fantasy;
+}
+.bar {
+  height: 2px;
+  width: 33%;
+  background-color: grey;
+  margin-bottom: 20px;
+}
+.icon {
+  color: white;
+  background-color: black;
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.threes {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin: 20px 0;
+}
+.thing1 {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.active,
+.thing1:hover {
+  color: white;
+  background-color: black;
+
+  .icon {
+    color: black;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+
+  border-bottom: 50px solid green;
+}
+.thing2 {
+  width: 28%;
+  height: 200px;
+  background-color: lightgray;
+  color: black;
+}
+.title3 h4 {
+  margin: 15px;
+  font-size: 25px;
+}
+.active-items {
+  height: 200px;
+  width: 700px;
+  margin: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  .shortSum {
+    text-align: justify;
+    font-size: 20px;
+    width: 300px;
+    p {
+      margin: 0px;
+    }
+  }
+  .picture-class {
+    height: 200px;
+    width: 300px;
+  }
+  .Future {
+    /*Replace with a picture for Future*/
+    background-color: green;
+  }
+  .Education {
+    /*Replace with a picture for Education*/
+    background-color: blue;
+  }
+  .Hobbies {
+    /*Replace with a picture for Hobbies*/
+    background-color: orange;
+  }
+}
+
+/*Next Section*/
+.content2 {
+  height: 500px;
+  background-color: lightgrey;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.pic2 {
+  height: 400px;
+  width: 550px;
+  background-image: url(../assets/pictures/mountain.JPG);
+  background-position: center;
+  background-size: cover;
+  border-radius: 20px;
+}
+.box2 {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+}

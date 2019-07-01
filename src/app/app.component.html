@@ -1,0 +1,96 @@
+<div class="body">
+  <div class="navigation">
+    <div class="nav-text">
+      <div class="nav-left">
+        <h2>My</h2>
+      </div>
+      <div class="nav-right">
+        <h2>Website</h2>
+      </div>
+    </div>
+    <div class="social">
+      <a href="https://www.facebook.com/adam.aucar" class="Facebook">
+        <fa-icon [icon]="faFacebookF"></fa-icon>
+      </a>
+      <div class="Twitter">
+        <fa-icon [icon]="faTwitter"></fa-icon>
+      </div>
+      <a href="https://www.instagram.com/johnaucar/" class="Instagram">
+        <fa-icon [icon]="faInstagram"></fa-icon>
+      </a>
+      <a href="https://www.linkedin.com/in/john-adam-aucar-81402ab4/" class="LinkedIn">
+        <fa-icon [icon]="faLinkedin"></fa-icon>
+      </a>
+      <div class="Reddit">
+        <fa-icon [icon]="faRedditAlien"></fa-icon>
+      </div>
+      <a href="https://github.com/joaucar" class="Github">
+        <fa-icon [icon]="faGithub"></fa-icon>
+      </a>
+    </div>
+  </div>
+  <div class="first-view">
+    <div class="first-view-circle"></div>
+    <div class="first-view-text">
+      Developer & Engineer
+    </div>
+  </div>
+  <div class="header">
+    <div class="picture"></div>
+    <div class="info">
+      <h2>John Adam Aucar</h2>
+      <p>
+        I am a student at Texas Tech University in Lubbock Texas. I am currently pursuing a
+        bachaelor degree in Mechanical Engineering as well as a minor in Mathematics and Philosophy.
+        Some of my interst include computers and videogames, playing and listening to music, cooking
+        and eating really good food, and sports. Learn more about me here on my website that I coded
+        and find links to my profiles on other social media.
+      </p>
+    </div>
+  </div>
+
+  <div class="spacer-pic"></div>
+  <div class="spacer"></div>
+
+  <div class="content">
+    <h2 id="aboutMe">About Me</h2>
+    <div class="bar"></div>
+    <div class="threes">
+      <div *ngFor="let items of info" class="thing2">
+        <div
+          class="thing1"
+          [class.active]="activeClass.title == items.title"
+          (click)="makeActive(items)"
+        >
+          <div class="icon">
+            <fa-icon [icon]="items.icon" size="2x"></fa-icon>
+          </div>
+          <div class="title3">
+            <h4>{{ items.title }}</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="active-items" *ngIf="activeClass">
+      <div class="shortSum">
+        <p>
+          {{ activeClass.text }}
+        </p>
+      </div>
+      <div class="picture-class {{ activeClass.title }}"></div>
+    </div>
+  </div>
+  <div class="content2">
+    <div class="pic2"></div>
+    <div class="box2">
+      <div class="title2">
+        <h2>Where in the World</h2>
+      </div>
+      <div class="info2">
+        <p>How did he get there?</p>
+        <p>Last update: {{ formatDate() }}</p>
+      </div>
+    </div>
+  </div>
+</div>
