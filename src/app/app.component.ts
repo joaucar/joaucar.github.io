@@ -18,6 +18,7 @@ import { Info } from './info';
 })
 export class AppComponent implements OnInit {
   title = 'Website';
+  credit = '< by JA />';
   faGithub = faGithub;
   faInstagram = faInstagram;
   faTwitter = faTwitter;
@@ -49,10 +50,11 @@ export class AppComponent implements OnInit {
       title: 'Future',
       icon: this.faRocket,
       text:
-        'Here you can find where I hope to go with my life and what I hope to accomplish with my time as well as my predictions on the direction the world is heading.'
+        'Here you can find where I hope to go with my life and what I hope to accomplish with my time \
+         as well as my predictions on the direction the world is heading.'
     }
   ];
-  activeClass: Info = this.info[0];
+  activeClass: Info;
 
   constructor(public TLService: TimelineService) {}
 
@@ -117,7 +119,7 @@ export class AppComponent implements OnInit {
     return date;
   }
 
-  makeActive(section) {
-    this.activeClass = section;
+  makeActive(selection) {
+    this.activeClass = selection;
   }
 }

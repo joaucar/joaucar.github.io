@@ -24,138 +24,62 @@
   width: 100%;
   text-align: center;
   z-index: 1;
+  text-shadow: 2px 2px black;
 }
 
 /*Navigation section*/
 .navigation {
-  display: flex;
-  justify-content: space-between;
+  width: 100vw;
   position: fixed;
   background-color: #3a3a3a;
-  width: 100%;
-  padding: 15px 5px;
   top: -5px;
   z-index: 100;
   border-bottom: 2px solid black;
-}
-.nav-text {
-  display: flex;
-}
-.nav-left {
-  color: white;
-  background-color: blue;
-  border-radius: 25px;
-  height: 48px;
-  width: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-right {
-  height: 48px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-.social {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Facebook {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Facebook:hover {
-  background-color: #4267b2;
-}
-.Instagram {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Instagram:hover {
-  background-image: linear-gradient(to bottom left, #7937a9, #e90916, #f0c900);
-}
-.LinkedIn {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.LinkedIn:hover {
-  background-color: #0077b5;
-}
-.Reddit {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Reddit:hover {
-  background-color: #ff4500;
-}
-.Twitter {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Twitter:hover {
-  background-color: #1da1f2;
-}
-.Github {
-  font-size: 30px;
-  color: white;
-  height: 48px;
-  width: 48px;
-  background-color: lightgrey;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0 10px;
-}
-.Github:hover {
-  background-color: black;
-}
-fa-icon {
-  margin-top: 3px;
+  .nav-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    .nav-text {
+      display: flex;
+    }
+    .nav-left {
+      color: white;
+      background-color: blue;
+      border-radius: 25px;
+      height: 48px;
+      width: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .nav-right {
+      height: 48px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+    }
+    .download {
+      width: 220px;
+      height: 50px;
+      background-color: blue;
+      color: white;
+      border-radius: 30px;
+      margin-right: 20px;
+      text-decoration: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 3px 2px black;
+    }
+    .download:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 8px rgb(0, 0, 0);
+    }
+    .download:active {
+      transform: translateY(5px);
+    }
+  }
 }
 
 /* Header section*/
@@ -166,7 +90,7 @@ fa-icon {
   height: 80vh;
   color: white;
 }
-.info {
+.header-info {
   border: 5px solid black;
   border-radius: 20px;
   display: flex;
@@ -177,16 +101,18 @@ fa-icon {
   width: 37.5%;
   height: 450px;
 }
-.info h2 {
+.header-info h2 {
   margin-bottom: 0px;
-  border-bottom: 3px solid red;
+  font-family: fantasy;
+  font-size: 2em;
+  text-shadow: 5px 3px black;
 }
-.info p {
+.header-info p {
   font-size: 20px;
   padding: 0px 10px;
   text-align: justify;
 }
-.picture {
+.header-picture {
   background-image: url(../assets/pictures/fountain.JPG);
   background-size: cover;
   background-position: center;
@@ -227,67 +153,66 @@ fa-icon {
 #aboutMe {
   font-size: 40px;
   font-family: fantasy;
+  text-shadow: 5px 3px black;
 }
-.bar {
+.content-bar {
   height: 2px;
   width: 33%;
   background-color: grey;
   margin-bottom: 20px;
 }
-.icon {
-  color: white;
-  background-color: black;
-  height: 75px;
-  width: 75px;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
 
-.threes {
+.content-threes {
   display: flex;
   justify-content: space-around;
   width: 100%;
   margin: 20px 0;
-}
-.thing1 {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.active,
-.thing1:hover {
-  color: white;
-  background-color: black;
-
-  .icon {
+  .content-thing2 {
+    width: 28%;
+    height: 250px;
+    background-color: lightgray;
     color: black;
-    background-color: white;
-    cursor: pointer;
+    border-radius: 10px;
+    .content-thing1 {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      border-radius: 10px;
+      .content-icon {
+        color: white;
+        background-color: black;
+        height: 75px;
+        width: 75px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+      }
+      .content-title h4 {
+        margin: 15px;
+        font-size: 25px;
+      }
+      .content-shortSum {
+        padding: 5px;
+      }
+    }
+    .active,
+    .content-thing1:hover {
+      color: white;
+      background-color: black;
+
+      .content-icon {
+        color: black;
+        background-color: white;
+        cursor: pointer;
+      }
+    }
   }
 }
-.triangle {
-  width: 0;
-  height: 0;
-  border-left: 25px solid transparent;
-  border-right: 25px solid transparent;
 
-  border-bottom: 50px solid green;
-}
-.thing2 {
-  width: 28%;
-  height: 200px;
-  background-color: lightgray;
-  color: black;
-}
-.title3 h4 {
-  margin: 15px;
-  font-size: 25px;
-}
 .active-items {
   height: 200px;
   width: 700px;
@@ -327,17 +252,137 @@ fa-icon {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  .content2-pic {
+    height: 400px;
+    width: 550px;
+    background-image: url(../assets/pictures/mountain.JPG);
+    background-position: center;
+    background-size: cover;
+    border-radius: 20px;
+  }
+  .content2-box {
+    display: flex;
+    flex-direction: column;
+    margin-right: 200px;
+  }
 }
-.pic2 {
-  height: 400px;
-  width: 550px;
-  background-image: url(../assets/pictures/mountain.JPG);
-  background-position: center;
-  background-size: cover;
-  border-radius: 20px;
-}
-.box2 {
+
+/* Footer */
+.footer {
+  background-color: #3a3a3a;
+  height: 65px;
+  border-top: 2px solid black;
   display: flex;
-  flex-direction: column;
-  margin-right: 200px;
+  justify-content: space-between;
+  align-items: center;
+
+  .credit {
+    p,
+    h2 {
+      margin: 0;
+    }
+    margin-left: 30px;
+    margin-top: 0px;
+    color: white;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Facebook {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Facebook:hover {
+    background-color: #4267b2;
+  }
+  .Instagram {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Instagram:hover {
+    background-image: linear-gradient(to bottom left, #7937a9, #e90916, #f0c900);
+  }
+  .LinkedIn {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .LinkedIn:hover {
+    background-color: #0077b5;
+  }
+  .Reddit {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Reddit:hover {
+    background-color: #ff4500;
+  }
+  .Twitter {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Twitter:hover {
+    background-color: #1da1f2;
+  }
+  .Github {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: lightgrey;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Github:hover {
+    background-color: black;
+  }
+  fa-icon {
+    margin-top: 3px;
+  }
 }
