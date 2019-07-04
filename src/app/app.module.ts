@@ -5,9 +5,10 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { MapComponent } from './map/map.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, MapComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent]
