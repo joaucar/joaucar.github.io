@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { config } from '../../config';
 
 @Component({
   selector: 'app-map',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./map.component.scss']
 })
 export class MapComponent implements OnInit {
-  apiKey = 'AIzaSyBveMA8VF4EDI0FdN3r6k6WyY9pqQZr9dY';
+  apiKey = config.APIkey;
   markers = '';
   pins = [
     'Tyler,TX',
