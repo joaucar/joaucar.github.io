@@ -7,7 +7,12 @@ import {
   faFacebookF,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
-import { faGraduationCap, faGlasses, faRocket } from '@fortawesome/free-solid-svg-icons';
+import {
+  faGraduationCap,
+  faGlasses,
+  faRocket,
+  faAddressCard
+} from '@fortawesome/free-solid-svg-icons';
 import { TimelineService } from './services/timeline.service';
 import { Info } from './info';
 
@@ -24,9 +29,6 @@ export class AppComponent implements OnInit {
   faTwitter = faTwitter;
   faRedditAlien = faRedditAlien;
   faFacebookF = faFacebookF;
-  faGraduationCap = faGraduationCap;
-  faGlasses = faGlasses;
-  faRocket = faRocket;
   faLinkedin = faLinkedin;
   timeStamp = '0';
   month = '0';
@@ -36,22 +38,39 @@ export class AppComponent implements OnInit {
   info: Info[] = [
     {
       title: 'Education',
-      icon: this.faGraduationCap,
+      icon: faGraduationCap,
+      short:
+        'Here you can find my educational credintials as well as my work experience and other knowledge that I have collected in my past.',
       text:
-        'Here you can find my educational credintials as well as my work experience and other knowledge that I have collected in my past.'
+        'In May of 2019 I earned a Bachelors degree in Mechanical Engineering with minors in Mathematics and Philosophy. \
+        In September of 2019 I will begin graduate school for Data Science with a Healthcare concentration. My interest with \
+        technology began to take off when I studied front-end web development at iXperience in Cape Town. I\'ve continued to practice and \
+        learn and now have a certificate in Machine Learning from Stanford.'
     },
     {
       title: 'Hobbies',
-      icon: this.faGlasses,
+      icon: faGlasses,
+      short:
+        'Here you can find more about what I do in my free time including sports, hobbies, passions and what I am doing right now.',
       text:
-        ' Here you can find more about what I do in my free time including sports, hobbies, passions and what I am doing right now.'
+        'I first discovered competative ultimate freisbee my freshman year of college and I have been playing ever since.\n \
+        I like to play the guitar, although I\'m not very good'
     },
     {
       title: 'Future',
-      icon: this.faRocket,
-      text:
+      icon: faRocket,
+      short:
         'Here you can find where I hope to go with my life and what I hope to accomplish with my time \
-         as well as my predictions on the direction the world is heading.'
+         as well as my predictions on the direction the world is heading.',
+      text:
+        'I am a supporter of space exploration and self-driving cars. I have been listening to the podcast Anatomy of Next and some of \
+        the technologies they talk about have me excited for the future. If you get a chance give it a listen.'
+    },
+    {
+      title: 'Contact',
+      icon: faAddressCard,
+      short: '',
+      text: 'Email: johnaucar6@gmail.com'
     }
   ];
   activeClass: Info;

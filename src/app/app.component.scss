@@ -148,7 +148,7 @@
   text-align: center;
   background-color: #3a3a3a;
   color: white;
-  height: 90vh;
+  min-height: 90vh;
 }
 #aboutMe {
   font-size: 40px;
@@ -167,12 +167,14 @@
   justify-content: space-around;
   width: 100%;
   margin: 20px 0;
+  flex-wrap: wrap;
   .content-thing2 {
     width: 28%;
     height: 250px;
     background-color: lightgray;
     color: black;
     border-radius: 10px;
+    margin: 5px;
     .content-thing1 {
       height: 100%;
       display: flex;
@@ -215,14 +217,14 @@
 
 .active-items {
   height: 200px;
-  width: 700px;
+  width: 80vw;
   margin: 25px 0;
   display: flex;
   justify-content: space-between;
   .shortSum {
     text-align: justify;
     font-size: 20px;
-    width: 300px;
+    width: 60%;
     p {
       margin: 0px;
     }
