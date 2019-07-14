@@ -5,11 +5,15 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
+import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
+import { config } from 'src/config';
 
 @NgModule({
   declarations: [AppComponent, MapComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FontAwesomeModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FontAwesomeModule, AgmCoreModule.forRoot({
+    apiKey: config.APIkey
+  })],
   providers: [],
   bootstrap: [AppComponent]
 })

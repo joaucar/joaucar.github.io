@@ -164,7 +164,7 @@
 
 .content-threes {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   width: 100%;
   margin: 20px 0;
   flex-wrap: wrap;
@@ -174,7 +174,7 @@
     background-color: lightgray;
     color: black;
     border-radius: 10px;
-    margin: 5px;
+    margin: 10px;
     .content-thing1 {
       height: 100%;
       display: flex;
@@ -184,7 +184,7 @@
       border-radius: 10px;
       .content-icon {
         color: white;
-        background-color: black;
+        background-color: blue;
         height: 75px;
         width: 75px;
         border-radius: 50%;
@@ -204,10 +204,10 @@
     .active,
     .content-thing1:hover {
       color: white;
-      background-color: black;
+      background-color: blue;
 
       .content-icon {
-        color: black;
+        color: blue;
         background-color: white;
         cursor: pointer;
       }
@@ -225,9 +225,7 @@
     text-align: justify;
     font-size: 20px;
     width: 60%;
-    p {
-      margin: 0px;
-    }
+    white-space: pre-wrap;
   }
   .picture-class {
     height: 200px;
@@ -262,10 +260,13 @@
     background-size: cover;
     border-radius: 20px;
   }
+  app-map {
+    height: 100%;
+    width: 100%;
+  }
   .content2-box {
     display: flex;
     flex-direction: column;
-    margin-right: 200px;
   }
 }
 

@@ -1,8 +1,9 @@
 .Map {
-  width: 100%;
-  margin-bottom: -4px;
+  height: calc(100% - 20px);
+  margin: 10px;
 }
 
-img {
+agm-map {
+  height: 100%;
   width: 100%;
 }

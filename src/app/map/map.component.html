@@ -1,3 +1,9 @@
 <div class="Map">
-  <img [src]="baseUrl" />
+  <agm-map [latitude]="centerLat" [longitude]="centerLng" [zoom]="zoom">
+    <agm-marker *ngFor="let mkrs of markers" [latitude]="mkrs.lat" [longitude]="mkrs.lng">
+      <agm-info-window>
+        <strong>{{ mkrs.address }}</strong>
+      </agm-info-window>
+    </agm-marker>
+  </agm-map>
 </div>
