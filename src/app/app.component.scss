@@ -246,28 +246,14 @@
 }
 
 /*Next Section*/
-.content2 {
-  height: 500px;
+
+app-map {
+  height: 80vh;
   background-color: lightgrey;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  .content2-pic {
-    height: 400px;
-    width: 550px;
-    background-image: url(../assets/pictures/mountain.JPG);
-    background-position: center;
-    background-size: cover;
-    border-radius: 20px;
-  }
-  app-map {
-    height: 100%;
-    width: 100%;
-  }
-  .content2-box {
-    display: flex;
-    flex-direction: column;
-  }
+  width: 100%;
 }
 
 /* Footer */
