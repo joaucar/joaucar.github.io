@@ -216,7 +216,8 @@
 }
 
 .active-items {
-  height: 200px;
+  min-height: 200px;
+  height: min-content;
   width: 80vw;
   margin: 25px 0;
   display: flex;
@@ -242,6 +243,43 @@
   .Hobbies {
     /*Replace with a picture for Hobbies*/
     background-color: orange;
+  }
+
+  form {
+    width: 100%;
+    .contact-basic {
+      display: flex;
+      justify-content: space-between;
+      width: inherit;
+      input {
+        height: 25px;
+        width: 49%;
+        margin-bottom: 5px;
+      }
+    }
+    textarea {
+      height: 300px;
+      width: calc(100% - 4px);
+    }
+    .submitBtn {
+      width: 220px;
+      height: 50px;
+      background-color: blue;
+      color: white;
+      border-radius: 30px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 3px 2px black;
+    }
+    .submitBtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 8px rgb(0, 0, 0);
+    }
+    .submitBtn:active {
+      transform: translateY(5px);
+    }
   }
 }
 

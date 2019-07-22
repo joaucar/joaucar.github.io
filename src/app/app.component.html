@@ -62,11 +62,39 @@
       </div>
     </div>
 
-    <div class="active-items" *ngIf="activeClass">
-      <div class="shortSum">
-        {{ activeClass.text }}
+    <div [ngSwitch]="activeClass?.title">
+      <div *ngSwitchCase="'Future' || 'Education'">
+        <div class="active-items">
+          <div class="shortSum">
+            {{ activeClass.text }}
+          </div>
+          <div class="picture-class {{ activeClass.title }}"></div>
+        </div>
       </div>
-      <div class="picture-class {{ activeClass.title }}"></div>
+
+      <div *ngSwitchCase="'Hobbies'">
+        <div class="active-items">
+          <div class="picture-class {{ activeClass.title }}"></div>
+          <div class="shortSum">
+            {{ activeClass.text }}
+          </div>
+        </div>
+      </div>
+
+      <div *ngSwitchCase="'Contact'">
+        <div class="active-items">
+          <form name="contact">
+            <div class="contact-basic">
+              <input type="text" placeholder="Name" required />
+              <input type="email" placeholder="Email" required />
+            </div>
+            <textarea name="message"></textarea>
+            <input type="submit" value="Submit" class="submitBtn" required />
+          </form>
+        </div>
+      </div>
+
+      <div *ngSwitchDefault></div>
     </div>
   </div>
 
