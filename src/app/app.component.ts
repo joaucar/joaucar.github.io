@@ -69,7 +69,7 @@ export class AppComponent implements OnInit {
     {
       title: 'Contact',
       icon: faAddressCard,
-      short: '',
+      short: 'Send me a message!',
       text: 'Email: johnaucar6@gmail.com\n Phone: 217-552-2463'
     }
   ];
@@ -140,5 +140,8 @@ export class AppComponent implements OnInit {
 
   makeActive(selection) {
     this.activeClass = selection;
+  }
+  submitForm(e) {
+    e.preventDefault();
   }
 }

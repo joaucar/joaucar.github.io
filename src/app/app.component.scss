@@ -247,6 +247,9 @@
 
   form {
     width: 100%;
+    .contact-bot {
+      display: none;
+    }
     .contact-basic {
       display: flex;
       justify-content: space-between;
