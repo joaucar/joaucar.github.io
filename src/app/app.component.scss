@@ -224,6 +224,7 @@
   justify-content: space-between;
   .shortSum {
     text-align: justify;
+    align-self: center;
     font-size: 20px;
     width: 60%;
     white-space: pre-wrap;
@@ -234,15 +235,38 @@
   }
   .Future {
     /*Replace with a picture for Future*/
-    background-color: green;
+    background-image: url(../assets/pictures/Future.jpg);
+    background-size: contain;
+    background-position: center;
   }
   .Education {
     /*Replace with a picture for Education*/
-    background-color: blue;
+    background-image: url(../assets/pictures/Graduation.jpg);
+    background-size: cover;
+    transform: rotate(90deg);
+    background-position-x: -50px;
+    width: 200px;
+    height: 300px;
   }
   .Hobbies {
     /*Replace with a picture for Hobbies*/
-    background-color: orange;
+    background-image: url(../assets/pictures/Disc1.JPG);
+    animation: slideshow 8s step-end 1s infinite;
+    @keyframes slideshow {
+      0% {
+        background-image: url(../assets/pictures/Disc1.JPG);
+      }
+      25% {
+        background-image: url(../assets/pictures/Disc2.JPG);
+      }
+      50% {
+        background-image: url(../assets/pictures/Disc3.JPG);
+      }
+      75% {
+        background-image: url(../assets/pictures/Disc4.JPG);
+      }
+    }
+    background-size: cover;
   }
 
   form {
