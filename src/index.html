@@ -2,7 +2,10 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <title>Website</title>
+    <meta name="author" content="John Aucar" />
+    <meta name="description" content="A website about me with my resume attached" />
+    <meta name="keywords" content="John, Aucar, Resume, Website, Angular, Netlify" />
+    <title>John Aucar's Website</title>
     <base href="/" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -10,5 +13,19 @@
   </head>
   <body>
     <app-root></app-root>
+    <div class="hidden-form">
+      <form name="contact-form" method="POST" netlify netlify-honeypot="bot-field">
+        <div class="contact-bot">
+          Are you a Robot?
+          <input type="text" name="bot-field" />
+        </div>
+        <div class="contact-basic">
+          <input type="text" name="name" placeholder="Name" required />
+          <input type="email" name="email" placeholder="Email" required />
+        </div>
+        <textarea name="message" placeholder="Message"></textarea>
+        <input type="submit" value="Submit" class="submitBtn" />
+      </form>
+    </div>
   </body>
 </html>
