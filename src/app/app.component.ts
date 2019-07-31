@@ -141,7 +141,4 @@ export class AppComponent implements OnInit {
   makeActive(selection) {
     this.activeClass = selection;
   }
-  submitForm(e) {
-    e.preventDefault();
-  }
 }

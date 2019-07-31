@@ -91,7 +91,7 @@
 
       <div *ngSwitchCase="'Contact'">
         <div class="active-items">
-          <form name="contact" netlify-honeypot="bot-field" netlify>
+          <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <div class="contact-bot">
               Are you a Robot?
               <input type="text" name="bot-field" />
@@ -101,7 +101,7 @@
               <input type="email" placeholder="Email" required />
             </div>
             <textarea name="message"></textarea>
-            <input type="submit" value="Submit" class="submitBtn" onclick="submitForm(e)" />
+            <input type="submit" value="Submit" class="submitBtn" />
           </form>
         </div>
       </div>
