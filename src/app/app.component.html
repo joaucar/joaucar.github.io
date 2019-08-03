@@ -2,11 +2,9 @@
   <div class="navigation">
     <div class="nav-content">
       <div class="nav-text">
-        <div class="nav-left">
-          <h2>My</h2>
-        </div>
         <div class="nav-right">
-          <h2>Website</h2>
+          <span class="nav-left">J</span>ohn &nbsp;<span class="nav-left">A</span>dam &nbsp;
+          <span class="nav-left">A</span>ucar
         </div>
       </div>
       <a class="download" href="../assets/docs/John Adam Resume.pdf" target="blank"
@@ -91,17 +89,24 @@
 
       <div *ngSwitchCase="'Contact'">
         <div class="active-items">
-          <form name="contact-form" method="POST" netlify netlify-honeypot="bot-field">
-            <div class="contact-bot">
+          <form name="netlify-form" method="POST" netlify netlify-honeypot="bot-field">
+            <p class="contact-bot">
               Are you a Robot?
               <input type="text" name="bot-field" />
-            </div>
-            <div class="contact-basic">
-              <input type="text" name="name" placeholder="Name" required />
-              <input type="email" name="email" placeholder="Email" required />
-            </div>
-            <textarea name="message" placeholder="Message"></textarea>
-            <input type="submit" value="Submit" class="submitBtn" />
+            </p>
+            <label class="form-label">
+              Name:<span class="asterik">*</span>
+              <input type="text" name="name" required />
+            </label>
+            <label class="form-label">
+              Email:<span class="asterik">*</span>
+              <input type="email" name="email" required />
+            </label>
+            <label class="form-label">
+              Message:
+              <textarea name="message"></textarea>
+            </label>
+            <button class="submitBtn">Submit</button>
           </form>
         </div>
       </div>

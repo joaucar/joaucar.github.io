@@ -46,18 +46,19 @@
       color: white;
       background-color: blue;
       border-radius: 25px;
-      height: 48px;
-      width: 48px;
+      height: 40px;
+      width: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
     }
     .nav-right {
-      height: 48px;
       display: flex;
       justify-content: center;
       align-items: center;
       color: white;
+      font-size: 2em;
+      font-weight: bold;
     }
     .download {
       width: 220px;
@@ -275,19 +276,22 @@
     .contact-bot {
       display: none;
     }
-    .contact-basic {
-      display: flex;
-      justify-content: space-between;
-      width: inherit;
-      input {
-        height: 25px;
-        width: 49%;
-        margin-bottom: 5px;
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      .asterik {
+        color: red;
       }
-    }
-    textarea {
-      height: 300px;
-      width: calc(100% - 4px);
+      input {
+        width: calc(100% - 4px);
+      }
+      textarea {
+        height: 300px;
+        width: calc(100% - 4px);
+      }
     }
     .submitBtn {
       font-family: "Times New Roman";
