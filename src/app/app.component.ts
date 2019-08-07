@@ -7,12 +7,7 @@ import {
   faFacebookF,
   faLinkedin
 } from '@fortawesome/free-brands-svg-icons';
-import {
-  faGraduationCap,
-  faGlasses,
-  faRocket,
-  faAddressCard
-} from '@fortawesome/free-solid-svg-icons';
+import { faGraduationCap, faGlasses, faRocket } from '@fortawesome/free-solid-svg-icons';
 import { TimelineService } from './services/timeline.service';
 import { Info } from './info';
 
@@ -65,12 +60,6 @@ export class AppComponent implements OnInit {
       text:
         'I am a supporter of space exploration and self-driving cars. I have been listening to the podcast Anatomy of Next and some of ' +
         'the technologies they talk about have me excited for the future. If you get a chance give it a listen.'
-    },
-    {
-      title: 'Contact',
-      icon: faAddressCard,
-      short: 'Send me a message!',
-      text: 'Email: johnaucar6@gmail.com\n Phone: 217-552-2463'
     }
   ];
   activeClass: Info;

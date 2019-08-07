@@ -2,10 +2,9 @@
   <div class="navigation">
     <div class="nav-content">
       <div class="nav-text">
-        <div class="nav-right">
-          <span class="nav-left">J</span>ohn &nbsp;<span class="nav-left">A</span>dam &nbsp;
-          <span class="nav-left">A</span>ucar
-        </div>
+        <div class="nav-right"><span class="nav-left">J</span>ohn &nbsp;</div>
+        <div class="nav-right"><span class="nav-left">A</span>dam &nbsp;</div>
+        <div class="nav-right"><span class="nav-left">A</span>ucar</div>
       </div>
       <a class="download" href="../assets/docs/John Adam Resume.pdf" target="blank"
         ><h2>Download Resume</h2></a
@@ -38,7 +37,7 @@
   <div class="spacer"></div>
 
   <div class="content">
-    <h2 id="aboutMe">About Me</h2>
+    <h2 class="section-title">About Me</h2>
     <div class="content-bar"></div>
     <div class="content-threes">
       <div *ngFor="let items of info" class="content-thing2">
@@ -87,35 +86,35 @@
         </div>
       </div>
 
-      <div *ngSwitchCase="'Contact'">
-        <div class="active-items">
-          <form name="netlify-form" method="POST" netlify netlify-honeypot="bot-field">
-            <p class="contact-bot">
-              Are you a Robot?
-              <input type="text" name="bot-field" />
-            </p>
-            <label class="form-label">
-              Name:<span class="asterik">*</span>
-              <input type="text" name="name" required />
-            </label>
-            <label class="form-label">
-              Email:<span class="asterik">*</span>
-              <input type="email" name="email" required />
-            </label>
-            <label class="form-label">
-              Message:
-              <textarea name="message"></textarea>
-            </label>
-            <button class="submitBtn">Submit</button>
-          </form>
-        </div>
-      </div>
-
       <div *ngSwitchDefault></div>
     </div>
   </div>
 
   <app-map></app-map>
+
+  <div class="contact">
+    <h2 class="section-title">Send me a Message!</h2>
+    <div class="content-bar"></div>
+    <form name="netlify-form" method="POST" netlify netlify-honeypot="bot-field">
+      <p class="contact-bot">
+        Are you a Robot?
+        <input type="text" name="bot-field" />
+      </p>
+      <label class="form-label">
+        Name:<span class="asterik">*</span>
+        <input type="text" name="name" required />
+      </label>
+      <label class="form-label">
+        Email:<span class="asterik">*</span>
+        <input type="email" name="email" required />
+      </label>
+      <label class="form-label">
+        Message:
+        <textarea name="message"></textarea>
+      </label>
+      <button class="submitBtn">Submit</button>
+    </form>
+  </div>
 
   <div class="footer">
     <div class="credit">

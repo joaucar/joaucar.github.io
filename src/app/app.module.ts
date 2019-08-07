@@ -8,9 +8,10 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { config } from 'src/config';
+import { ThanksComponent } from './thanks/thanks.component';
 
 @NgModule({
-  declarations: [AppComponent, MapComponent],
+  declarations: [AppComponent, MapComponent, ThanksComponent],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule, FontAwesomeModule, AgmCoreModule.forRoot({
     apiKey: config.APIkey
   })],
