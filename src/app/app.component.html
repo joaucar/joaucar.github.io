@@ -40,53 +40,28 @@
     <h2 class="section-title">About Me</h2>
     <div class="content-bar"></div>
     <div class="content-threes">
-      <div *ngFor="let items of info" class="content-thing2">
-        <div
-          class="content-thing1"
-          [class.active]="activeClass?.title == items.title"
-          (click)="makeActive(items)"
-        >
-          <div class="content-icon">
-            <fa-icon [icon]="items.icon" size="2x"></fa-icon>
-          </div>
-          <div class="content-title">
-            <h4>{{ items.title }}</h4>
-          </div>
-          <div class="content-shortSum">
-            {{ items.short }}
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div [ngSwitch]="activeClass?.title">
-      <div *ngSwitchCase="'Future' || 'Education'">
-        <div class="active-items">
-          <div class="shortSum">
-            {{ activeClass.text }}
-          </div>
-          <div class="picture-class {{ activeClass.title }}"></div>
-        </div>
-      </div>
-      <div *ngSwitchCase="'Education'">
-        <div class="active-items">
-          <div class="shortSum">
-            {{ activeClass.text }}
-          </div>
-          <div class="picture-class {{ activeClass.title }}"></div>
-        </div>
-      </div>
-
-      <div *ngSwitchCase="'Hobbies'">
-        <div class="active-items">
-          <div class="picture-class {{ activeClass.title }}"></div>
-          <div class="shortSum">
-            {{ activeClass.text }}
+      <div class="content-buttons">
+        <div *ngFor="let items of info" class="content-thing2">
+          <div
+            class="content-thing1"
+            [class.active]="activeClass?.title == items.title"
+            (click)="makeActive(items)"
+          >
+            <div class="content-icon">
+              <fa-icon [icon]="items.icon" size="2x"></fa-icon>
+            </div>
+            <div class="content-title">
+              <h4>{{ items.title }}</h4>
+            </div>
+            <div class="content-shortSum">
+              {{ items.short }}
+            </div>
           </div>
         </div>
       </div>
-
-      <div *ngSwitchDefault></div>
+      <div class="content-info">
+        <app-thanks *ngIf="activeClass" [activeClass]="activeClass"></app-thanks>
+      </div>
     </div>
   </div>
 

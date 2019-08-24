@@ -21,7 +21,7 @@ export class MapComponent implements OnInit {
       description: 'Where I learned to code'
     },
     { address: 'Seville, ES', lat: 37.389091, lng: -5.984459, description: 'Study Abroad' },
-    { address: 'Paris, FR', lat: 48.856613, lng: 2.352222 },
+    { address: 'Paris, FR', lat: 48.856613, lng: 2.352222, description: 'Family Vacation' },
     {
       address: 'Omaha Beach, FR',
       lat: 49.35042,
@@ -33,6 +33,12 @@ export class MapComponent implements OnInit {
       lat: 42.88062,
       lng: -8.54661,
       description: 'Hiked the Camino'
+    },
+    {
+      address: 'Tokyo, JP',
+      lat: 35.689487,
+      lng: 139.691711,
+      description: 'Family Vacation'
     }
   ];
   centerLat = 0;
