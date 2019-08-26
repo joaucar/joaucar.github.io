@@ -346,13 +346,13 @@ app-map {
       .asterik {
         color: red;
       }
-      input {
-        width: calc(100% - 4px);
-      }
-      textarea {
-        height: 300px;
-        width: calc(100% - 4px);
-      }
+    }
+    input {
+      width: calc(100% - 4px);
+    }
+    textarea {
+      height: 300px;
+      width: calc(100% - 4px);
     }
     .submitBtn {
       font-family: "Times New Roman";

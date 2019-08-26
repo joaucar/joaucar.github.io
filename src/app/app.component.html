@@ -73,23 +73,19 @@
   <div class="contact">
     <h2 class="section-title">Send me a Message!</h2>
     <div class="content-bar"></div>
-    <form name="netlify-form" method="POST" netlify netlify-honeypot="bot-field">
+    <form name="netlify-form" netlify netlify-honeypot="bot-field">
       <p class="contact-bot">
         Are you a Robot?
         <input type="text" name="bot-field" />
       </p>
-      <label class="form-label">
-        Name:<span class="asterik">*</span>
-        <input type="text" name="name" required />
-      </label>
-      <label class="form-label">
-        Email:<span class="asterik">*</span>
-        <input type="email" name="email" required />
-      </label>
+      <label class="form-label"> Name:<span class="asterik">*</span> </label>
+      <input type="text" name="name" required />
+      <label class="form-label"> Email:<span class="asterik">*</span> </label>
+      <input type="email" name="email" required />
       <label class="form-label">
         Message:
-        <textarea name="message"></textarea>
       </label>
+      <textarea name="message"></textarea>
       <button class="submitBtn">Submit</button>
     </form>
   </div>
