@@ -60,6 +60,9 @@
         </div>
       </div>
       <div class="content-info">
+        <div *ngIf="!activeClass" class="content-placeholder">
+          <h2 class="section-title">Select a button for more info</h2>
+        </div>
         <app-thanks *ngIf="activeClass" [activeClass]="activeClass"></app-thanks>
       </div>
     </div>

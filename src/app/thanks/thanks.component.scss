@@ -9,7 +9,10 @@
   //   display: flex;
   //   justify-content: space-between;
   @media (max-width: 640px) {
-    top: 50%;
+    width: 95%;
+    margin: 0 2.5%;
+    position: static;
+    transform: none;
   }
   .shortSum {
     text-align: justify;
@@ -21,6 +24,7 @@
     white-space: pre-wrap;
     @media (max-width: 640px) {
       width: 100%;
+      margin-top: 0px;
     }
   }
   .picture-class {
@@ -39,10 +43,8 @@
     /*Replace with a picture for Education*/
     background-image: url(../../assets/pictures/Graduation.jpg);
     background-size: cover;
-    transform: rotate(90deg);
-    background-position-x: -50px;
-    width: 200px;
-    height: 300px;
+    background-position: center;
+    background-position-y: -50px;
   }
   .Hobbies {
     /*Replace with a picture for Hobbies*/
