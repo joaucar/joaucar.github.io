@@ -13,22 +13,31 @@
   </head>
   <body>
     <app-root></app-root>
-    <div class="hidden-form">
+    <div class="contact">
+      <h2 class="section-title">Send me a Message!</h2>
+      <div class="content-bar"></div>
       <form name="netlify-form" netlify method="POST" netlify-honeypot="bot-field">
         <p class="contact-bot">
           Are you a Robot?
           <input type="text" name="bot-field" />
         </p>
-        <label class="form-label"> Name:<span class="asterik">*</span> </label>
-        <input type="text" name="name" required />
-        <label class="form-label"> Email:<span class="asterik">*</span> </label>
-        <input type="email" name="email" required />
-        <label class="form-label">
-          Message:
-        </label>
-        <textarea name="message"></textarea>
+        <p>
+          <label class="form-label"> Name:<span class="asterik">*</span> </label>
+          <input type="text" name="name" required />
+        </p>
+        <p>
+          <label class="form-label"> Email:<span class="asterik">*</span> </label>
+          <input type="email" name="email" required />
+        </p>
+        <p>
+          <label class="form-label">
+            Message:
+          </label>
+          <textarea name="message"></textarea>
+        </p>
         <button class="submitBtn">Submit</button>
       </form>
     </div>
+    <app-footer></app-footer>
   </body>
 </html>

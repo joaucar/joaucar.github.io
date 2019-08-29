@@ -15,3 +15,192 @@ body {
     font-size: 35px;
   }
 }
+
+/* Contact card */
+.contact {
+  background-color: #3a3a3a;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 0;
+  .content-bar {
+    height: 2px;
+    width: 33%;
+    background-color: grey;
+    margin-bottom: 20px;
+  }
+  form {
+    width: 80%;
+    .contact-bot {
+      display: none;
+    }
+    label {
+      display: block;
+      text-align: left;
+      margin-bottom: 5px;
+      font-size: 20px;
+      font-weight: bold;
+      .asterik {
+        color: red;
+      }
+    }
+    input {
+      width: calc(100% - 4px);
+      height: 20px;
+    }
+    textarea {
+      height: 300px;
+      width: calc(100% - 6px);
+    }
+    .submitBtn {
+      font-family: "Times New Roman";
+      font-size: 1.5em;
+      font-weight: bold;
+      width: 220px;
+      height: 50px;
+      background-color: blue;
+      color: white;
+      border-radius: 30px;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 3px 2px black;
+    }
+    .submitBtn:hover {
+      transform: scale(1.1);
+      box-shadow: 0 5px 8px rgb(0, 0, 0);
+    }
+    .submitBtn:active {
+      transform: translateY(5px);
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  background-color: #3a3a3a;
+  height: 65px;
+  border-top: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media (max-width: 640px) {
+    height: 150px;
+  }
+
+  .credit {
+    p,
+    h2 {
+      margin: 0;
+    }
+    margin-left: 25px;
+    margin-top: 0px;
+    color: white;
+  }
+
+  .social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    @media (max-width: 640px) {
+      flex-wrap: wrap;
+      width: 75%;
+    }
+  }
+  .Facebook {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Facebook:hover {
+    background-color: #4267b2;
+  }
+  .Instagram {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Instagram:hover {
+    background-image: linear-gradient(to bottom left, #7937a9, #e90916, #f0c900);
+  }
+  .LinkedIn {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .LinkedIn:hover {
+    background-color: #0077b5;
+  }
+  .Reddit {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Reddit:hover {
+    background-color: #ff4500;
+  }
+  .Twitter {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Twitter:hover {
+    background-color: #1da1f2;
+  }
+  .Github {
+    font-size: 30px;
+    color: white;
+    height: 48px;
+    width: 48px;
+    background-color: #b5b5b5;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+  }
+  .Github:hover {
+    background-color: black;
+  }
+  fa-icon {
+    margin-top: 3px;
+  }
+}

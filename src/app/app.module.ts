@@ -9,13 +9,20 @@ import { AgmCoreModule } from '@agm/core';
 import { MapComponent } from './map/map.component';
 import { config } from 'src/config';
 import { ThanksComponent } from './thanks/thanks.component';
+import { FooterComponent } from './footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, MapComponent, ThanksComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, FontAwesomeModule, AgmCoreModule.forRoot({
-    apiKey: config.APIkey
-  })],
+  declarations: [AppComponent, MapComponent, ThanksComponent, FooterComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    HttpClientModule,
+    FontAwesomeModule,
+    AgmCoreModule.forRoot({
+      apiKey: config.APIkey
+    })
+  ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent, FooterComponent]
 })
 export class AppModule {}
