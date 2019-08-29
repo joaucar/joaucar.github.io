@@ -124,11 +124,11 @@
   display: flex;
   justify-content: center;
   background-color: #3a3a3a;
-  height: 80vh;
+  min-height: 80vh;
   color: white;
   @media (max-width: 640px) {
     flex-direction: column;
-    height: 100vh;
+    height: 120vh;
   }
 }
 .header-info {
@@ -142,7 +142,7 @@
   width: 37.5%;
   height: 450px;
   @media (max-width: 640px) {
-    height: 330px;
+    height: 60%;
     width: calc(100vw - 10px);
     margin: 5px 0;
   }
@@ -171,7 +171,7 @@
   justify-content: center;
   @media (max-width: 640px) {
     width: 100vw;
-    height: 300px;
+    height: 40%;
     margin: 5px 0;
   }
 }
@@ -294,7 +294,7 @@
     @media (max-width: 640px) {
       width: 100vw;
       margin: 0;
-      height: 90vh;
+      min-height: 90vh;
       position: static;
     }
     .content-placeholder {
