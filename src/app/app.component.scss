@@ -94,8 +94,6 @@
   }
 }
 .first-view-circle {
-  background-image: url(../assets/pictures/dots.jpg);
-  background-size: cover;
   width: 400px;
   height: 400px;
   border-radius: 50%;
@@ -159,9 +157,7 @@
   text-align: justify;
 }
 .header-picture {
-  background-image: url(../assets/pictures/fountain.JPG);
-  background-size: cover;
-  background-position: center;
+  overflow: hidden;
   border-radius: 25px;
   width: 400px;
   height: 450px;
@@ -174,6 +170,11 @@
     height: 40%;
     margin: 5px 0;
   }
+  img {
+    height: 750px;
+    position: relative;
+    bottom: 15px;
+  }
 }
 
 /* Spacer section */
@@ -182,13 +183,17 @@
   opacity: 1;
 }
 .spacer-pic {
-  background-image: url(../assets/pictures/mountain.JPG);
-  background-size: cover;
   z-index: -1;
   position: fixed;
   top: 0;
   height: 100%;
   width: 100%;
+  img {
+    position: relative;
+    top: 50px;
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /*Section of Three Things*/

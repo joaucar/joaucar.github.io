@@ -15,6 +15,12 @@ export class MapComponent implements OnInit {
       description: 'Undergrad, Lubbock, TX'
     },
     {
+      address: 'Chicago, IL',
+      lat: 41.903801,
+      lng: -87.629051,
+      description: 'Where I live'
+    },
+    {
       address: 'Cape Town, ZA',
       lat: -33.92711,
       lng: 18.42006,

@@ -2,8 +2,32 @@
 body {
   margin: 0;
 }
-.hidden-form {
-  display: none;
+.loader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #3a3a3a;
+  color: blue;
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 1px 1px #fff;
+  letter-spacing: 5px;
+  .dot {
+    opacity: 0;
+    animation: reveal 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+  }
+  .d2 {
+    animation-delay: 0.33s;
+  }
+  .d3 {
+    animation-delay: 0.66s;
+  }
+  @keyframes reveal {
+    to {
+      opacity: 1;
+    }
+  }
 }
 .section-title {
   font-size: 40px;
