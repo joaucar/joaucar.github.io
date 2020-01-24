@@ -45,24 +45,30 @@
     <h2 class="section-title">About Me</h2>
     <div class="content-bar"></div>
     <div class="content-threes">
-      <div class="content-buttons">
-        <div *ngFor="let items of info" class="content-thing2">
-          <div
-            class="content-thing1"
-            [class.active]="activeClass?.title == items.title"
-            (click)="makeActive(items)"
-          >
-            <div class="content-icon">
-              <fa-icon [icon]="items.icon" size="2x"></fa-icon>
+      <div class="content-right">
+        <ul class="content-buttons">
+          <li *ngFor="let items of info" class="content-thing2 hexagon-outter ">
+            <!-- <div class="hexagon-outter">
+              <div class="hexagon-inner"> -->
+            <div
+              class="content-thing1 hexagon-inner"
+              [class.active]="activeClass?.title == items.title"
+              (click)="makeActive(items)"
+            >
+              <div class="content-icon">
+                <fa-icon [icon]="items.icon" size="2x"></fa-icon>
+              </div>
+              <div class="content-title">
+                <h4>{{ items.title }}</h4>
+              </div>
+              <div class="content-shortSum">
+                {{ items.short }}
+              </div>
+              <!-- </div>
+                </div> -->
             </div>
-            <div class="content-title">
-              <h4>{{ items.title }}</h4>
-            </div>
-            <div class="content-shortSum">
-              {{ items.short }}
-            </div>
-          </div>
-        </div>
+          </li>
+        </ul>
       </div>
       <div class="content-info">
         <div *ngIf="!activeClass" class="content-placeholder">
