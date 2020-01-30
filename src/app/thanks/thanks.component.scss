@@ -28,42 +28,20 @@
     }
   }
   .picture-class {
-    height: 200px;
     width: 300px;
     background-color: #b5b5b5;
     margin: auto;
+    position: relative;
+    overflow: hidden;
   }
+
   .Future {
-    /*Replace with a picture for Future*/
-    background-image: url(../../assets/pictures/Future.jpg);
-    background-size: contain;
-    background-position: center;
+    height: 200px;
   }
   .Education {
-    /*Replace with a picture for Education*/
-    background-image: url(../../assets/pictures/Graduation.jpg);
-    background-size: cover;
-    background-position: center;
-    background-position-y: -50px;
+    height: 400px;
   }
   .Hobbies {
-    /*Replace with a picture for Hobbies*/
-    background-image: url(../../assets/pictures/Disc1.JPG);
-    animation: slideshow 8s step-end 1s infinite;
-    @keyframes slideshow {
-      0% {
-        background-image: url(../../assets/pictures/Disc1.JPG);
-      }
-      25% {
-        background-image: url(../../assets/pictures/Disc2.JPG);
-      }
-      50% {
-        background-image: url(../../assets/pictures/Disc3.JPG);
-      }
-      75% {
-        background-image: url(../../assets/pictures/Disc4.JPG);
-      }
-    }
-    background-size: cover;
+    height: 400px;
   }
 }

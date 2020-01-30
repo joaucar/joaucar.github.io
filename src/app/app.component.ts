@@ -35,7 +35,8 @@ export class AppComponent implements OnInit {
         'In May of 2019 I earned a Bachelors degree in Mechanical Engineering with minors in Mathematics and Philosophy. ' +
         'I am currently studying Data Science with a Healthcare concentration at DePaul University in Chicago. My interest with ' +
         'technology began to take off when I studied front-end web development at iXperience in Cape Town. I\'ve continued to ' +
-        'practice and learn and now I know several programming languages and have a certificate in Machine Learning from Stanford.'
+        'practice and learn and now I know several programming languages and have a certificate in Machine Learning from Stanford.',
+      images: ['../assets/pictures/Graduation.jpg']
     },
     {
       title: 'Hobbies',
@@ -45,7 +46,8 @@ export class AppComponent implements OnInit {
       text:
         'I first discovered competative ultimate freisbee my freshman year of college and I have been playing ever since. ' +
         'I enjoy running because it is peaceful and keeps me in shape. ' +
-        'I like to listen to music and play the guitar, although I\'m not very good.'
+        'I like to listen to music and play the guitar whenever I have time.',
+      images: ['../assets/pictures/Hobbies.jpg']
     },
     {
       title: 'Future',
@@ -56,7 +58,8 @@ export class AppComponent implements OnInit {
       text:
         'Through my studies in the technology industry I have become a supporter of space exploration and self-driving cars. ' +
         'I have been NASA TV and I am excited to see the next several years of space exploration with the Artemis missions and some of ' +
-        'the scientific advancements they talk about have me excited for the future. If you get a chance, check it out.'
+        'the scientific advancements they talk about have me excited for the future. If you get a chance, check it out.',
+      images: ['../assets/pictures/Future.jpg']
     }
   ];
   activeClass: Info;
