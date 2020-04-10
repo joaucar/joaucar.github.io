@@ -18,7 +18,7 @@ export class ThanksComponent implements OnChanges {
     this.activeClass.images.forEach(image => {
       console.log(image);
       const img = new Image();
-      img.src = '../' + image;
+      img.src = image;
       img.classList.add('pictures', this.activeClass.title);
       parentDiv.appendChild(img);
       i++;
