@@ -7,7 +7,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #3a3a3a;
+  background-color: rgb(20,20,20);
   color: blue;
   font-size: 4em;
   font-weight: bold;
@@ -45,7 +45,7 @@ body {
 .contact {
   max-width: 900px;
   margin: auto;
-  background-color: #3a3a3a;
+  background-color:rgb(20,20,20);
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -107,7 +107,7 @@ body {
 
 /* Footer */
 .footer {
-  background-color: #3a3a3a;
+  background-color: rgb(20,20,20);
   height: 65px;
   border-top: 2px solid black;
   display: flex;

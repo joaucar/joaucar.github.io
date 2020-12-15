@@ -16,11 +16,6 @@ import { trigger, style, transition, state, animate } from '@angular/animations'
       state('in', style({ transform: 'translateY(0)', opacity: 1 })),
       transition(':enter', [style({ transform: 'translateY(100%)', opacity: 0 }), animate(2000)])
     ])
-    // trigger('headerInLeft', [
-    //   state('in', style({ transform: 'translateX(0)', opacity: 1 })),
-    //   transition(':enter', [style({ transform: 'translateX(-100%)', opacity: 0 }), animate(2000)]),
-    //   transition(':leave', [animate(2000, style({ transform: 'translateX(100%)', opacity: 0 }))])
-    // ])
   ]
 })
 export class AppComponent implements OnInit {
@@ -33,10 +28,10 @@ export class AppComponent implements OnInit {
         'Here you can find my educational credintials as well as my work experience and other knowledge that I have collected in my past.',
       text:
         'In May of 2019 I earned a Bachelors degree in Mechanical Engineering with minors in Mathematics and Philosophy. ' +
-        'I am currently studying Data Science with a Healthcare concentration at DePaul University in Chicago. My interest with ' +
+        'I am currently studying Data Science with a concentration in Computational Methods at DePaul University in Chicago. My interest with ' +
         'technology began to take off when I studied front-end web development at iXperience in Cape Town. I\'ve continued to ' +
         'practice and learn and now I know several programming languages and have a certificate in Machine Learning from Stanford.',
-      images: ['https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Graduation.jpg']
+      images: 'https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Graduation.jpg'
     },
     {
       title: 'Hobbies',
@@ -44,10 +39,11 @@ export class AppComponent implements OnInit {
       short:
         'Here you can find more about what I do in my free time including sports, hobbies, passions and what I am doing right now.',
       text:
+        'In my free time outside of work I like to maintain a physical and musical pursuit. '+
         'I first discovered competative ultimate freisbee my freshman year of college and I have been playing ever since. ' +
         'I enjoy running because it is peaceful and keeps me in shape. ' +
         'I like to listen to music and play the guitar whenever I have time.',
-      images: ['https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Hobbies.jpg']
+      images: 'https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Hobbies.jpg'
     },
     {
       title: 'Future',
@@ -56,18 +52,15 @@ export class AppComponent implements OnInit {
         'Here you can find where I hope to go with my life and what I hope to accomplish with my time \
          as well as my predictions on the direction the world is heading.',
       text:
-        `Through my studies in the technology industry I have become a supporter of space exploration and self-driving cars. As a result of the reccent COVID-19 pandemic, there has been an increase in demand for online consumer interaction and remote work. I predict that this will accelerate the adoption of Cloud Technologies.`
+        'Through my studies in the technology industry I have become a supporter of space exploration and self-driving cars. '+
+        'As a result of the reccent COVID-19 pandemic, there has been an increase in demand for online consumer interaction '+
+        'and remote work. I predict that this will accelerate the adoption of Cloud Technologies.'
         ,
-      images: ['https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Future.jpg']
+      images: 'https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Future.jpg'
     }
   ];
-  activeClass: Info;
 
   constructor() {}
 
   ngOnInit() {}
-
-  makeActive(selection) {
-    this.activeClass = selection;
-  }
 }

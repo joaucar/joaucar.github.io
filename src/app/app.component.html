@@ -19,63 +19,45 @@
     </div>
   </div>
 
-  <div class="spacer-pic">
-    <img src="https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/mountain.JPG" />
-  </div>
-  <div class="spacer"></div>
-
+  
   <div class="header">
     <!-- @headerInLeft -->
     <div class="header-picture">
       <img src="https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/fountain.JPG" alt="Plaza de Espa&ntilde;a" />
-    </div>
+    </div> 
     <div class="header-info">
       <h2>John Adam Aucar</h2>
       <p>
         I have a Bachaelor's degree in Mechanical Engineering from Texas Tech University in Lubbock,
         Texas as well as a minor in Mathematics and Philosophy. Some of my interst include computers
-        and videogames, playing and listening to music, cooking and eating really good food, and
+        and board games, playing and listening to music, cooking and eating really good food, and
         sports. Learn more about me here on my website that I coded and find links to my profiles on
         other social media.
       </p>
     </div>
   </div>
+  
+  <div class="spacer-pic">
+    <img src="https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/mountain.JPG" />
+  </div>
+  <div class="spacer"></div>
 
   <div class="content">
     <h2 class="section-title">About Me</h2>
     <div class="content-bar"></div>
-    <div class="content-threes">
-      <div class="content-right">
-        <ul class="content-buttons">
-          <li *ngFor="let items of info" class="content-thing2 hexagon-outter ">
-            <!-- <div class="hexagon-outter">
-              <div class="hexagon-inner"> -->
-            <div
-              class="content-thing1 hexagon-inner"
-              [class.active]="activeClass?.title == items.title"
-              (click)="makeActive(items)"
-            >
-              <div class="content-icon">
-                <fa-icon [icon]="items.icon" size="2x"></fa-icon>
-              </div>
-              <div class="content-title">
-                <h4>{{ items.title }}</h4>
-              </div>
-              <div class="content-shortSum">
-                {{ items.short }}
-              </div>
-              <!-- </div>
-                </div> -->
-            </div>
-          </li>
-        </ul>
-      </div>
-      <div class="content-info">
-        <div *ngIf="!activeClass" class="content-placeholder">
-          <h2 class="section-title">Select a button for more info</h2>
+
+    <div class = 'content-info-new'>
+      <div *ngFor="let items of info" class = 'content-box'>
+        <div class = 'content-left'>
+          <img src = "{{items.images}}" class = 'content-image'/>
         </div>
-        <!-- Rename this component later-->
-        <app-thanks *ngIf="activeClass" [activeClass]="activeClass"></app-thanks>
+        <div class = 'content-right'>
+          <div class = 'content-header'>
+            <fa-icon [icon]="items.icon" class = 'content-icon'></fa-icon>
+            <h3 class = 'content-title'>{{items.title}}</h3>
+          </div>
+          <p>{{items.text}}</p>
+        </div>
       </div>
     </div>
   </div>

@@ -5,5 +5,5 @@ export class Info {
   icon: IconDefinition;
   short: string;
   text: string;
-  images: string[];
+  images: string;
 }
