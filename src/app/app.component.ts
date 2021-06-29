@@ -27,8 +27,8 @@ export class AppComponent implements OnInit {
       short:
         'Here you can find my educational credintials as well as my work experience and other knowledge that I have collected in my past.',
       text:
-        'In May of 2019 I earned a Bachelors degree in Mechanical Engineering with minors in Mathematics and Philosophy. ' +
-        'I am currently studying Data Science with a concentration in Computational Methods at DePaul University in Chicago. My interest with ' +
+        'In May of 2019 I earned a Bachelors degree in Mechanical Engineering with minors in Mathematics and Philosophy from Texas Tech University. ' +
+        'In March of 2021 I earned a Masters degree in Data Science with a concentration in Computational Methods from DePaul University in Chicago. My interest with ' +
         'technology began to take off when I studied front-end web development at iXperience in Cape Town. I\'ve continued to ' +
         'practice and learn and now I know several programming languages and have a certificate in Machine Learning from Stanford.',
       images: 'https://websitephotosfornetlify.s3.us-east-2.amazonaws.com/Graduation.jpg'

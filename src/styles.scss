@@ -72,9 +72,13 @@ body {
         color: red;
       }
     }
+    .form-user-input-text{
+      border-radius: 10px;
+      padding-left: 5px;
+    }
     input {
-      width: calc(100% - 4px);
-      height: 20px;
+      width: calc(100% - 9px);
+      height: 25px;
     }
     textarea {
       height: 300px;

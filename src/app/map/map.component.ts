@@ -9,16 +9,16 @@ export class MapComponent implements OnInit {
   markers: Marker[] = [
     { address: 'Tyler,TX', lat: 32.3491, lng: -95.306141, description: 'Home Town' },
     {
-      address: 'Texas Tech University',
+      address: 'Lubbock, TX',
       lat: 33.57883,
       lng: -101.88802,
-      description: 'Undergrad, Lubbock, TX'
+      description: 'Texas Tech University, 2015-2019'
     },
     {
       address: 'Chicago, IL',
       lat: 41.903801,
       lng: -87.629051,
-      description: 'Where I live'
+      description: 'De Paul University, 2019-2021'
     },
     {
       address: 'Cape Town, ZA',
@@ -38,13 +38,19 @@ export class MapComponent implements OnInit {
       address: 'Santiago de Compostela, ES',
       lat: 42.88062,
       lng: -8.54661,
-      description: 'Hiked the Camino'
+      description: 'Walked the Camino'
     },
     {
       address: 'Tokyo, JP',
       lat: 35.689487,
       lng: 139.691711,
       description: 'Family Vacation'
+    },
+    {
+      address: 'Kansas City, MO',
+      lat: 39.0997,
+      lng: -94.5786,
+      description: 'Where I live'
     }
   ];
   centerLat = 0;
